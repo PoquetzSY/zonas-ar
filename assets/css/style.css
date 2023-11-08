@@ -2,7 +2,8 @@
 
 :root {
     --Black: #211f1f;
-    --utColor: #00AB84
+    --utColor: #00AB84;
+    --navColor: #A3D9C9;
 }
 
 * {
@@ -27,7 +28,7 @@ body {
 /* nav */
 
 nav {
-    background-color: #dafff4;
+    background-color: var(--navColor);
     width: 100%;
     height: 80px;
     padding: 20px 4%;

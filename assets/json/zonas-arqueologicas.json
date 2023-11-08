@@ -8,9 +8,9 @@
             "imgc": "https://mochilerosenyucatan.com/wp-content/uploads/2019/03/Captura-de-pantalla-2019-03-04-a-las-15.51.12-800x445.png",
             "imgv": "https://lh5.googleusercontent.com/p/AF1QipOhRiNkeCeAsXxqTOf9ztgWl8DRMSH9-ie3B9S7=w408-h306-k-no",
             "latitud": "",
-            "altitud": "",
+            "longitud": "",
             "historia": "",
-            "zona": "Sur"
+            "region": "Sureste"
         },
         {
             "nombre": "Tulum",
@@ -20,9 +20,9 @@
             "imgc": "https://www.cancunadventure.net/images/mayanruins/tulum.jpg",
             "imgv": "https://lh5.googleusercontent.com/p/AF1QipN-hfd18m27N11rRIy5dOKDUDPrw3ngpnRVPR-5=w408-h306-k-no",
             "latitud": "",
-            "altitud": "",
+            "longitud": "",
             "historia": "",
-            "zona": "Sur"
+            "region": "Sureste"
         },
         {
             "nombre": "Ek Balam",
@@ -32,9 +32,57 @@
             "imgc": "https://www.yucatan.gob.mx/docs/galerias/ek_balam/0.jpg",
             "imgv": "https://lh5.googleusercontent.com/p/AF1QipPZosRppXf2K_y-S4b368PnqSihODnqbfb0O9eq=w408-h282-k-no",
             "latitud": "",
-            "altitud": "",
+            "longitud": "",
             "historia": "",
-            "zona": "Sur"
+            "region": "Sureste"
+        },
+        {
+            "nombre": "Chichén Itzá",
+            "descripcion": "Los libros indígenas escritos al principio de la Conquista, relatan que Chichén Itzá fue fundada por los itzaes, un pueblo maya-chontal venido del oeste; su nombre significa, la ciudad al borde del pozo de los itzaes. La zona tuvo una larga ocupación antes de la era cristiana, pero fue hasta el final del periodo Clásico cuando el sitio adquirió las proporciones y características urbanas que hoy admiramos.",
+            "estado": "Yucatán",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14930.553626154222!2d-88.567783!3d20.684285!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f5138c6e391c0e7%3A0x7c1ea0a168994d9a!2zQ2hpY2jDqW4gSXR6w6E!5e0!3m2!1ses!2smx!4v1697049820827!5m2!1ses!2smx",
+            "imgc": "https://www.chichenitza.com/public/assets/img/ruins/chichen-itza-ruins.jpg",
+            "imgv": "https://lh5.googleusercontent.com/p/AF1QipPVRyqNwBkPGFTPdcqXJRH_9UD9iRY3nZyUu3xB=w408-h306-k-no",
+            "latitud": "",
+            "longitud": "",
+            "historia": "",
+            "region": "Sureste"
+        },
+        {
+            "nombre": "Cobá",
+            "descripcion": "La ciudad de Cobá se desarrolló cerca de cinco lagos que fueron un factor fundamental para su desarrollo y subsistencia. Con aproximadamente 70 km2 de extensión, la ciudad estaba comunicada por extensos caminos levantados de piedra, conocidos en lengua maya como sacbé (camino blanco), de longitud y ancho variables. El más largo de ellos con 100 km., llega al sitio de Yaxuná, muy cerca de Chichén Itzá.",
+            "estado": "Quintana Roo",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3737.400494348753!2d-87.73201012490999!3d20.489802181028093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f51cf546e480153%3A0xc67bf794d06103de!2sZona%20arqueol%C3%B3gica%20de%20Coba!5e0!3m2!1ses!2smx!4v1697064621624!5m2!1ses!2smx",
+            "imgc": "https://paradiseadventours.com/wp-content/uploads/2019/04/coba-ruins-mexico-cancun.jpg",
+            "imgv": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Coba_El_Castillo.JPG/800px-Coba_El_Castillo.JPG",
+            "latitud": "",
+            "longitud": "",
+            "historia": "",
+            "region": "Sureste"
+        },
+        {
+            "nombre": "Uxmal",
+            "descripcion": "El asentamiento, de tipo concéntrico, ocupa un área de 16.25 km². Los tres primeros kilómetros corresponden a la parte central y se caracterizan por la abundancia de construcciones monumentales del tipo de la Plaza Central y el Templo de los Siete Muertos; los restantes 13 km cuadrados incluyen conjuntos arquitectónicos que se van volviendo más dispersos y la última parte se compone de edificios con plataformas escalonadas alrededor de plazas y pequeñas pirámides sin bóveda. En total se han registrado alrededor de 8400 estructuras.",
+            "estado": "Yucatán",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.52955257878!2d-89.77336082491352!3d20.361044581126457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56349ebaba4e77%3A0x1128a45bd7051c7!2sZona%20Arqueol%C3%B3gica%20de%20Uxmal!5e0!3m2!1ses!2smx!4v1697065405386!5m2!1ses!2smx",
+            "imgc": "https://www.yucatan.gob.mx/docs/galerias/uxmal/0.jpg",
+            "imgv": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Uxmal_Yucatan_Mexico.JPG",
+            "latitud": "",
+            "longitud": "",
+            "historia": "",
+            "region": "Sureste"
+        },
+        {
+            "nombre": "Sierra de San Francisco",
+            "descripcion": "Uno de los sitios de arte rupestre más antiguos y ricos del mundo. Con un origen que se remonta 8,800 años, los murales prehistóricos de este conjunto de cañadas, barrancas y cuevas sorprenden por su calidad, conservación y monumentalidad. Desde 1993 es Patrimonio Cultural de la Humanidad.",
+            "estado": "Baja California Sur",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1816479.8380503322!2d-115.21098965653536!3d27.22504593675003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8134f280f704577d%3A0xf437e6f5935d0619!2sSierra%20San%20Francisco!5e0!3m2!1ses-419!2smx!4v1699470321664!5m2!1ses-419!2smx",
+            "imgc": "https://ilamdir.org/blobs/ilamdir/w1280h720/328/2020/22/pinturas-042-01.jpg",
+            "imgv": "https://lugares.inah.gob.mx/images/zonas/media/1658/_thumb1/Cueva_la_Pintada_en_Sierra_de_San_Francisco__Foto_Mauricio_Marat_INAH_3.jpg",
+            "latitud": "27.70988",
+            "longitud": "-113.1951",
+            "historia": "",
+            "region": "Noroeste"
         },
         {
             "nombre": "Template",
@@ -46,7 +94,7 @@
             "latitud": "",
             "altitud": "",
             "historia": "",
-            "zona": ""
+            "region": ""
         }
         
     ]
