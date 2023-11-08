@@ -73,13 +73,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function mostrarCatalogo(zonas) {
         catalogoContainer.innerHTML = ''; // Limpiar el catálogo antes de mostrar zonas filtradas
+        console.log(zonas);
 
         zonas.forEach(zona => {
             const zonaArqueologicaDiv = document.createElement('div');
             zonaArqueologicaDiv.classList.add('item');
 
             const enlaceDetalle = document.createElement('a');
-            enlaceDetalle.href = `zona-detalle.html?zona=${zona.id}`;
+            enlaceDetalle.href = `zona-detalle.html?zona=${zonas.indexOf(zona)}`;
 
             const contentImg = document.createElement('div');
             contentImg.classList.add('content-img');
@@ -134,5 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
         mostrarCatalogo(zonasFiltradas);
     }
 });
+
 
 
