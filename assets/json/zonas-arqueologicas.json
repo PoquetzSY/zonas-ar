@@ -1,0 +1,53 @@
+{
+    "zonasArqueologicas": [
+        {
+            "nombre": "Dzibilchaltún",
+            "descripcion": "El asentamiento, de tipo concéntrico, ocupa un área de 16.25 km². Los tres primeros kilómetros corresponden a la parte central y se caracterizan por la abundancia de construcciones monumentales del tipo de la Plaza Central y el Templo de los Siete Muertos; los restantes 13 km cuadrados incluyen conjuntos arquitectónicos que se van volviendo más dispersos y la última parte se compone de edificios con plataformas escalonadas alrededor de plazas y pequeñas pirámides sin bóveda. En total se han registrado alrededor de 8400 estructuras.",
+            "estado": "Yucatán",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3722.339055733699!2d-89.5997930248928!3d21.0990445805679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f55d89c92a497bd%3A0x40c72f3013758873!2sDzibilchalt%C3%BAn!5e0!3m2!1ses!2smx!4v1697065686308!5m2!1ses!2smx",
+            "imgc": "https://mochilerosenyucatan.com/wp-content/uploads/2019/03/Captura-de-pantalla-2019-03-04-a-las-15.51.12-800x445.png",
+            "imgv": "https://lh5.googleusercontent.com/p/AF1QipOhRiNkeCeAsXxqTOf9ztgWl8DRMSH9-ie3B9S7=w408-h306-k-no",
+            "latitud": "",
+            "altitud": "",
+            "historia": "",
+            "zona": "Sur"
+        },
+        {
+            "nombre": "Tulum",
+            "descripcion": "Poderosa ciudad costera amurallada, con algunas de las pinturas murales mejor conservadas del área maya. Tulum es uno de los sitios más antiguamente registrados y conocidos por el mundo occidental, pues en 1518 el cronista español Juan Díaz narraba haber visto una ciudad tan grande como Sevilla con una torre, que indudablemente era El Castillo de Tulum, el cual en aquel tiempo aún era ocupado por los habitantes.",
+            "estado": "Quintana Roo",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29953.48255129202!2d-87.49247558834875!3d20.209618799497072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4fd17d16293265%3A0xff68d6fca492c963!2sTulum!5e0!3m2!1ses!2smx!4v1697051330065!5m2!1ses!2smx",
+            "imgc": "https://www.cancunadventure.net/images/mayanruins/tulum.jpg",
+            "imgv": "https://lh5.googleusercontent.com/p/AF1QipN-hfd18m27N11rRIy5dOKDUDPrw3ngpnRVPR-5=w408-h306-k-no",
+            "latitud": "",
+            "altitud": "",
+            "historia": "",
+            "zona": "Sur"
+        },
+        {
+            "nombre": "Ek Balam",
+            "descripcion": "Ek Balam, poseedor de majestuosas construcciones ocultas entre grandes árboles, es un sitio diferente a todos los del área maya y no se parece a ningún otro sitio arqueológico conocido. Su historia comienza aproximadamente desde el año 300 a.C., hasta la llegada de los españoles. Fue capital del imperio de Tah, al que rendían tributo los pueblos de la zona oriente del Estado, incluyendo parte de la costa, como lo prueban ofrendas de conchas que han sido encontradas. Abarcó unos 12 km2, que incluía un espacio central sagrado de poco más de 1 km2 donde residía la élite, protegido y delimitado por 3 murallas. Estas tenían 5 entradas, donde desembocaban igual número de caminos prehispánicos o sacbés (sak bé oob).",
+            "estado": "Yucatán",
+            "urlmaps": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3727.497535275574!2d-88.1385089248987!3d20.892293480723094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f519d2cfd290dcf%3A0x2c8918d639ce5df9!2sZona%20Arqueol%C3%B3gica%20de%20Ek%20Balam!5e0!3m2!1ses!2smx!4v1697063957334!5m2!1ses!2smx",
+            "imgc": "https://www.yucatan.gob.mx/docs/galerias/ek_balam/0.jpg",
+            "imgv": "https://lh5.googleusercontent.com/p/AF1QipPZosRppXf2K_y-S4b368PnqSihODnqbfb0O9eq=w408-h282-k-no",
+            "latitud": "",
+            "altitud": "",
+            "historia": "",
+            "zona": "Sur"
+        },
+        {
+            "nombre": "Template",
+            "descripcion": "",
+            "estado": "",
+            "urlmaps": "",
+            "imgc": "",
+            "imgv": "",
+            "latitud": "",
+            "altitud": "",
+            "historia": "",
+            "zona": ""
+        }
+        
+    ]
+}

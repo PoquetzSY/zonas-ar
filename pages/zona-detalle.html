@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nombre zona</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" href="./assets/img/maya.png" />
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+    <section class="info-zone" id="info-zone">
+        <div class="part1">
+            <a onclick="history.back()" class="icon" style="cursor: pointer;">
+                <img class="img-icon" src="/assets/img/bx-chevron-left.svg" alt="icon-chevron" />
+            </a>
+            <img class="img-zone" src="" alt="img" id="zona-imagen" />
+        </div>
+
+        <div class="part2">
+            <h2 id="zona-nombre">Nombre zona</h2>
+            <div class="location">
+                <img src="/assets/img/bxs-map.svg" alt="icon-map" />
+                <p id="zona-estado">Estado zona</p>
+            </div>
+            <p class="description" id="zona-descripcion">descripcion zona</p>
+            <iframe src="" width="400" height="300" style="border: 0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" id="zona-mapa"></iframe>
+        </div>
+    </section>
+
+    <div id="dark_reader_root" style="all: initial !important;"></div>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/zonas-info.js"></script>
+</body>
+
+</html>

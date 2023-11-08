@@ -1,0 +1,140 @@
+// Header
+const headerContainer = document.createElement('header');
+fetch('/components/header.html')
+    .then(response => response.text())
+    .then(data => {
+        headerContainer.innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error al cargar el encabezado:', error);
+    });
+window.addEventListener('DOMContentLoaded', () => {
+    document.body.insertBefore(headerContainer, document.body.firstChild);
+});
+
+// Lectura JSON
+archivoJSON = "/assets/json/zonas-arqueologicas.json"
+function cargarDatosZonasArqueologicas(archivoJSON) {
+    return fetch(archivoJSON)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('No se pudo cargar el archivo JSON.');
+            }
+            return response.json();
+        });
+}
+
+// Catalogo de zonas
+
+document.addEventListener('DOMContentLoaded', () => {
+    const catalogoContainer = document.getElementById('grid');
+    const filtroZona = document.getElementById('filtroZona');
+    const filtroEstado = document.getElementById('filtroEstado');
+
+    let zonasArqueologicas = []; // Almacenar los datos de las zonas arqueológicas
+
+    cargarDatosZonasArqueologicas(archivoJSON)
+        .then(data => {
+            zonasArqueologicas = data.zonasArqueologicas;
+            llenarFiltros(zonasArqueologicas);
+            mostrarCatalogo(zonasArqueologicas);
+        })
+        .catch(error => {
+            console.error('Error al cargar los datos:', error);
+        });
+
+    filtroZona.addEventListener('change', () => {
+        filtrarZonas();
+    });
+
+    filtroEstado.addEventListener('change', () => {
+        filtrarZonas();
+    });
+
+    function llenarFiltros(zonas) {
+        // Implementa la lógica para llenar las opciones de los selectores de filtro
+        const zonasUnicas = [...new Set(zonas.map(zona => zona.zona))];
+        const estadosUnicos = [...new Set(zonas.map(zona => zona.estado))];
+
+        zonasUnicas.forEach(zona => {
+            const opcion = document.createElement('option');
+            opcion.value = zona;
+            opcion.textContent = zona;
+            filtroZona.appendChild(opcion);
+        });
+
+        estadosUnicos.forEach(estado => {
+            const opcion = document.createElement('option');
+            opcion.value = estado;
+            opcion.textContent = estado;
+            filtroEstado.appendChild(opcion);
+        });
+    }
+
+    function mostrarCatalogo(zonas) {
+        catalogoContainer.innerHTML = ''; // Limpiar el catálogo antes de mostrar zonas filtradas
+        console.log(zonas);
+
+        zonas.forEach(zona => {
+            const zonaArqueologicaDiv = document.createElement('div');
+            zonaArqueologicaDiv.classList.add('item');
+
+            const enlaceDetalle = document.createElement('a');
+            enlaceDetalle.href = `zona-detalle.html?zona=${zonas.indexOf(zona)}`;
+
+            const contentImg = document.createElement('div');
+            contentImg.classList.add('content-img');
+
+            const imagen = document.createElement('img');
+            imagen.src = zona.imgc; // Reemplaza con la URL de la imagen de la zona
+            imagen.alt = 'zona';
+
+            contentImg.appendChild(imagen);
+            enlaceDetalle.appendChild(contentImg);
+
+            const nombre = document.createElement('p');
+            nombre.classList.add('name');
+            nombre.textContent = zona.nombre;
+            enlaceDetalle.appendChild(nombre);
+
+            const locationDiv = document.createElement('div');
+            locationDiv.classList.add('location');
+
+            const iconMap = document.createElement('img');
+            iconMap.src = '/assets/img/bxs-map.svg';
+            iconMap.alt = 'icon-map';
+
+            const ubicacion = document.createElement('p');
+            ubicacion.textContent = zona.estado;
+
+            locationDiv.appendChild(iconMap);
+            locationDiv.appendChild(ubicacion);
+
+            enlaceDetalle.appendChild(locationDiv);
+
+            zonaArqueologicaDiv.appendChild(enlaceDetalle);
+
+            catalogoContainer.appendChild(zonaArqueologicaDiv);
+        });
+    }
+
+    function filtrarZonas() {
+        const zonaSeleccionada = filtroZona.value;
+        const estadoSeleccionado = filtroEstado.value;
+
+        const zonasFiltradas = zonasArqueologicas.filter(zona => {
+            if (zonaSeleccionada && zona.zona !== zonaSeleccionada) {
+                return false;
+            }
+            if (estadoSeleccionado && zona.estado !== estadoSeleccionado) {
+                return false;
+            }
+            return true;
+        });
+
+        mostrarCatalogo(zonasFiltradas);
+    }
+});
+
+
+
