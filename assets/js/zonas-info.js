@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const zonaTitulo = document.getElementById("zona-title");
   const zonaNombre = document.getElementById("zona-nombre");
   const zonaEstado = document.getElementById("zona-estado");
   const zonaDescripcion = document.getElementById("zona-descripcion");
@@ -13,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const zona = data.zonasArqueologicas[zonaId];
 
       if (zona) {
+        zonaTitulo.textContent = zona.nombre;
         zonaNombre.textContent = zona.nombre;
         zonaEstado.textContent = zona.estado;
         zonaDescripcion.textContent = zona.descripcion;

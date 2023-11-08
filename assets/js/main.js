@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function llenarFiltros(zonas) {
         // Implementa la lógica para llenar las opciones de los selectores de filtro
-        const zonasUnicas = [...new Set(zonas.map(zona => zona.zona))];
+        const zonasUnicas = [...new Set(zonas.map(zona => zona.region))];
         const estadosUnicos = [...new Set(zonas.map(zona => zona.estado))];
 
         zonasUnicas.forEach(zona => {
@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const estadoSeleccionado = filtroEstado.value;
 
         const zonasFiltradas = zonasArqueologicas.filter(zona => {
-            if (zonaSeleccionada && zona.zona !== zonaSeleccionada) {
+            if (zonaSeleccionada && zona.region !== zonaSeleccionada) {
                 return false;
             }
             if (estadoSeleccionado && zona.estado !== estadoSeleccionado) {
