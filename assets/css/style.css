@@ -320,6 +320,11 @@ footer {
 }
 
 @media (max-width: 800px) {
+    .part1 .img-zone {
+        width: 100%;
+        height: 250px;
+        border-radius: 10px;
+    }
     .info-zone {
         flex-direction: column;
         width: 85%;
@@ -353,7 +358,8 @@ footer {
         margin: 20px 0 30px 0;
     }
     iframe{
-        width: 85%;
+        margin-top: 20px;
+        width: 100%;
     }
 }
 
