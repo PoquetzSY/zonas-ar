@@ -99,6 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const locationDiv = document.createElement('div');
             locationDiv.classList.add('location');
+            locationDiv.classList.add('itemap');
 
             const iconMap = document.createElement('img');
             iconMap.src = '/assets/img/bxs-map.svg';

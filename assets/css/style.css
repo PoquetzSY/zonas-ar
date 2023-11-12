@@ -195,7 +195,11 @@ nav {
     object-fit: cover;
     border-radius: 10px 10px 0 0;
 }
-
+.item .itemap{
+    filter: brightness(0) saturate(100%) invert(95%)
+    sepia(0%) saturate(1216%) hue-rotate(198deg) 
+    brightness(100%) contrast(89%);
+}
 .item .name {
     font-weight: 500;
     margin: 10px 0px;
@@ -295,13 +299,15 @@ nav {
 .location p {
     color: #6F6F6F;
     font-weight: 400;
+    margin-right: 10px;
 }
 
 .location img {
-    filter: brightness(0) saturate(100%) invert(95%)
+    filter: brightness(0) saturate(100%) invert(45%)
     sepia(0%) saturate(1216%) hue-rotate(198deg) 
     brightness(100%) contrast(89%);
     width: 24px;
+    margin-right: 5px;
 }
 
 .item .location {
