@@ -320,6 +320,7 @@ nav {
 
 .filtro{
     margin-left: 35px;
+    color: var(--utColor);
 }
 
 footer {
@@ -377,3 +378,18 @@ footer {
     }
 }
 
+.tools{
+    display: flex;
+    align-items: center;
+}
+.zonasn{
+    margin-left: 25px;
+    color: var(--utColor);
+}
+.tools select{
+    margin-left: 10px;
+    border: none;
+}
+.noz{
+    margin-left: 10px;
+}
