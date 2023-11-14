@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filtroZona = document.getElementById('filtroZona');
     const filtroEstado = document.getElementById('filtroEstado');
 
-    let zonasArqueologicas = []; // Almacenar los datos de las zonas arqueológicas
+    let zonasArqueologicas = []; 
 
     cargarDatosZonasArqueologicas(archivoJSON)
         .then(data => {
@@ -52,9 +52,12 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function llenarFiltros(zonas) {
-        // Implementa la lógica para llenar las opciones de los selectores de filtro
+        const ordenRegiones = ['Noroeste', 'Noreste', 'Centro', 'Occidente', 'Sureste'];
         const zonasUnicas = [...new Set(zonas.map(zona => zona.region))];
         const estadosUnicos = [...new Set(zonas.map(zona => zona.estado))];
+
+        zonasUnicas.sort((a, b) => ordenRegiones.indexOf(a) - ordenRegiones.indexOf(b));
+        estadosUnicos.sort();
 
         zonasUnicas.forEach(zona => {
             const opcion = document.createElement('option');
@@ -72,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function mostrarCatalogo(zonas) {
-        catalogoContainer.innerHTML = ''; // Limpiar el catálogo antes de mostrar zonas filtradas
+        catalogoContainer.innerHTML = ''; 
         console.log(zonas);
 
         zonas.forEach(zona => {
@@ -86,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
             contentImg.classList.add('content-img');
 
             const imagen = document.createElement('img');
-            imagen.src = zona.imgc; // Reemplaza con la URL de la imagen de la zona
+            imagen.src = zona.imgc;
             imagen.alt = 'zona';
 
             contentImg.appendChild(imagen);
@@ -116,6 +119,9 @@ document.addEventListener('DOMContentLoaded', () => {
             zonaArqueologicaDiv.appendChild(enlaceDetalle);
 
             catalogoContainer.appendChild(zonaArqueologicaDiv);
+
+            const contadorZonas = document.getElementById("cantidadZonas");
+            contadorZonas.textContent = zonas.length;
         });
     }
 
@@ -134,6 +140,8 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         mostrarCatalogo(zonasFiltradas);
+        const contadorZonas = document.getElementById("cantidadZonas");
+        contadorZonas.textContent = zonasFiltradas.length;
     }
 });
 

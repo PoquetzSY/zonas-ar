@@ -18,18 +18,23 @@
     <header></header>
     <section id="catalog">
       <h2>Catálogo de Zonas Arqueológicas</h2>
-
-      <label for="filtroZona" class="filtro">Filtrar por Region:</label>
-      <select id="filtroZona">
-          <option value="">Todas las Regiones</option>
-          <!-- Opciones para filtrar por zona -->
-      </select>
+      <div class="tools">
   
-      <label for="filtroEstado" class="filtro">Filtrar por Estado:</label>
-      <select id="filtroEstado">
-          <option value="">Todos los Estados</option>
-          <!-- Opciones para filtrar por estado -->
-      </select>
+        <label for="filtroZona" class="filtro">Filtrar por Region:</label>
+        <select id="filtroZona">
+            <option value="">Todas las Regiones</option>
+            <!-- Opciones para filtrar por zona -->
+        </select>
+    
+        <label for="filtroEstado" class="filtro">Filtrar por Estado:</label>
+        <select id="filtroEstado">
+            <option value="">Todos los Estados</option>
+            <!-- Opciones para filtrar por estado -->
+        </select>
+        <p class="zonasn">Total de zonas: <p id="cantidadZonas" class="noz"></p></p>
+                
+      </div>
+
       <div class="grid" id="grid">
           <!-- Fichas de catálogo se generarán aquí -->
       </div>
