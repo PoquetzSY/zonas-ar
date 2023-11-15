@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const filtroZona = document.getElementById('filtroZona');
     const filtroEstado = document.getElementById('filtroEstado');
 
-    let zonasArqueologicas = []; 
+    let zonasArqueologicas = [];
 
     cargarDatosZonasArqueologicas(archivoJSON)
         .then(data => {
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function mostrarCatalogo(zonas) {
-        catalogoContainer.innerHTML = ''; 
+        catalogoContainer.innerHTML = '';
         console.log(zonas);
 
         zonas.forEach(zona => {
@@ -83,7 +83,8 @@ document.addEventListener('DOMContentLoaded', () => {
             zonaArqueologicaDiv.classList.add('item');
 
             const enlaceDetalle = document.createElement('a');
-            enlaceDetalle.href = `zona-detalle.html?zona=${zonas.indexOf(zona)}`;
+            const nombreCodificado = encodeURIComponent(zona.nombre);
+            enlaceDetalle.href = `zona-detalle.html?zona=${nombreCodificado}`;
 
             const contentImg = document.createElement('div');
             contentImg.classList.add('content-img');
@@ -144,6 +145,3 @@ document.addEventListener('DOMContentLoaded', () => {
         contadorZonas.textContent = zonasFiltradas.length;
     }
 });
-
-
-

@@ -12,9 +12,12 @@ document.addEventListener("DOMContentLoaded", () => {
   cargarDatosZonasArqueologicas(archivoJSON)
     .then((data) => {
       const params = new URLSearchParams(window.location.search);
-      const zonaId = params.get("zona");
+      const zonaNombreCodificado = params.get("zona");
+      
+      // Decodifica el nombre de la zona desde la URL
+      const zonaNombreid = decodeURIComponent(zonaNombreCodificado);
 
-      const zona = data.zonasArqueologicas[zonaId];
+      const zona = data.zonasArqueologicas.find((z) => z.nombre === zonaNombreid);
 
       if (zona) {
         zonaTitulo.textContent = zona.nombre;
