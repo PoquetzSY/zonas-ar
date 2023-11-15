@@ -309,6 +309,10 @@ nav {
     width: 24px;
     margin-right: 5px;
 }
+.location div{
+    display: flex;
+    align-items: center;
+}
 
 .item .location {
     padding-left: 20px;
@@ -377,6 +381,24 @@ footer {
     iframe{
         margin-top: 20px;
         width: 100%;
+    }
+    .location{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .location div{
+        display: flex;
+        align-items: center;
+    }
+    .coordenadas{
+        width: 100%;
+        overflow: hidden;
+        text-overflow: clip;
+    }
+    #zona-nombre{
+        text-align: center;
     }
 }
 
