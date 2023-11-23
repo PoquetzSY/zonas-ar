@@ -328,8 +328,12 @@ nav {
 }
 
 footer {
-    padding: 24px 0;
-    text-align: center;
+    background-color: var(--navColor);
+    display: flex;
+    padding: 20px;
+}
+footer p{
+    margin-left: 10px;
 }
 
 @media (max-width: 800px) {

@@ -11,6 +11,17 @@ fetch('/components/header.html')
 window.addEventListener('DOMContentLoaded', () => {
     document.body.insertBefore(headerContainer, document.body.firstChild);
 });
+// Footer
+const footerContainer = document.createElement('footer');
+fetch('/components/footer.html')
+    .then(response => response.text())
+    .then(data => {
+        footerContainer.innerHTML = data;
+        document.body.appendChild(footerContainer); // Agregar al final del body
+    })
+    .catch(error => {
+        console.error('Error al cargar el pie de página:', error);
+    });
 
 // Lectura JSON
 archivoJSON = "/assets/json/zonas-arqueologicas.json"
