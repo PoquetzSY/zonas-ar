@@ -401,8 +401,6 @@ footer div{
     .location{
         width: 100%;
         display: flex;
-        flex-direction: column;
-        align-items: flex-start;
     }
     .location div{
         display: flex;
