@@ -371,7 +371,7 @@ footer div{
     }
 
     .banner {
-        height: 700px;
+        min-height: calc(84vh - 64px);
         flex-direction: column;
         justify-content: start;
     }
