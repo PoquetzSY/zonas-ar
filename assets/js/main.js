@@ -64,19 +64,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function llenarFiltros(zonas) {
         const ordenRegiones = ['Noroeste', 'Noreste', 'Centro', 'Occidente', 'Sureste'];
-        const zonasUnicas = [...new Set(zonas.map(zona => zona.region))];
         const estadosUnicos = [...new Set(zonas.map(zona => zona.estado))];
-
-        zonasUnicas.sort((a, b) => ordenRegiones.indexOf(a) - ordenRegiones.indexOf(b));
+    
+        const regionesLimpias = ordenRegiones.map(region => region.trim());
+        ordenRegiones.sort((a, b) => regionesLimpias.indexOf(a) - regionesLimpias.indexOf(b));
         estadosUnicos.sort();
-
-        zonasUnicas.forEach(zona => {
+    
+        ordenRegiones.forEach(zona => {
             const opcion = document.createElement('option');
             opcion.value = zona;
             opcion.textContent = zona;
             filtroZona.appendChild(opcion);
+            console.log(zona)
         });
-
+    
         estadosUnicos.forEach(estado => {
             const opcion = document.createElement('option');
             opcion.value = estado;
@@ -84,6 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
             filtroEstado.appendChild(opcion);
         });
     }
+    
 
     function mostrarCatalogo(zonas) {
         catalogoContainer.innerHTML = '';

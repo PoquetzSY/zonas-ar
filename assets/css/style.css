@@ -330,13 +330,25 @@ nav {
 footer {
     background-color: var(--navColor);
     display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
 }
 footer p{
     margin-left: 10px;
 }
+footer div{
+    padding-top: 5px;
+    display: flex;
+}
 
 @media (max-width: 800px) {
+    footer div{
+        padding-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .filtros{
         display: flex;
         flex-direction: column;
