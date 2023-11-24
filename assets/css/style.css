@@ -398,9 +398,14 @@ footer div{
         margin-top: 20px;
         width: 100%;
     }
-    .location{
+    .itemap{
+        display: flex !important;
+    }
+    .coords{
         width: 100%;
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .location div{
         display: flex;
