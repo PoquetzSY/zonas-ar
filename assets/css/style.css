@@ -100,6 +100,7 @@ nav {
 }
 
 .banner {
+    min-height: calc(100vh - 80px);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -371,7 +372,6 @@ footer div{
     }
 
     .banner {
-        min-height: calc(84vh - 64px);
         flex-direction: column;
         justify-content: start;
     }
